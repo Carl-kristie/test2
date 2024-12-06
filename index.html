@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Belated Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Belated Birthday</h1>
+            <p class="subtitle">A Special Note Just for You</p>
+        </header>
+
+        <section id="task-section">
+            <h2>Complete These Tasks</h2>
+            <p>Unlock your hidden message by completing the tasks below:</p>
+            <div id="tasks">
+                <label><input type="checkbox" onclick="checkTasks()"> Remember our first date?</label><br>
+                <label><input type="checkbox" onclick="checkTasks()"> Recall the time you made me laugh uncontrollably?</label><br>
+                <label><input type="checkbox" onclick="checkTasks()"> Think of one reason I’m proud of you.</label>
+            </div>
+        </section>
+
+        <section id="heart-section">
+            <div id="heart" class="heart-animation">
+            </div>
+        </section>
+
+        <section id="hidden-message">
+            <strong>You did it! Here's your message:</strong><br>
+            My love, I just want you to know how much I love and care about you. I'm so proud of you and appreciate all that you do for me. You are my rock, my joy, and my everything. Thank you for being the kind, caring, and amazing person you are. Happy Belated Birthday!
+        </section>
+
+        <section id="gallery">
+            <h2>Our Memories</h2>
+            <p>Upload photos that mean the world to us:</p>
+            <input type="file" id="photoUpload" multiple onchange="showGallery(event)">
+            <div id="photoGallery"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Made with Love</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

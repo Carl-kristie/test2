@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background: rgba(75, 54, 33, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header .subtitle {
+  font-size: 1.4em;
+  color: #ffe1b3;
+}
+
+section {
+  background: rgba(43, 43, 43, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #ffe1b3;
+}
+
+#tasks label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#tasks label:hover {
+  color: #ffd8a8;
+}
+
+#hidden-message {
+  background: rgba(75, 54, 33, 0.9);
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+#heart-section {
+  display: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heart-animation {
+  font-size: 1.5em;
+  line-height: 1.2;
+  color: #ff6b6b;
+  animation: fadeInHeart 2s ease-in-out;
+}
+
+@keyframes fadeInHeart {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#gallery input {
+  margin-bottom: 15px;
+}
+
+#photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#photoGallery img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #ffe1b3;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#photoGallery img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+footer {
+  text-align: center;
+  color: #ffe1b3;
+  padding: 15px;
+  font-size: 1em;
+}
+
+button {
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #feb47b;
+}
+
+#heart-section {
+  display: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#heart {
+  font-size: 2em;
+  color: #ff6b6b;
+  animation: heartFadeIn 2s ease;
+}
+
+#heart-section {
+  display: none;
+}
